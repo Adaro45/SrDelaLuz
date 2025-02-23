@@ -1,18 +1,18 @@
 import '../styles/Contact.css';
 
 export default function Contact() {
-  const phoneNumber = "+525648210476";
+  const phoneNumber = "+52438176443";
   const email = "romanacentro@yahoo.com";
 
   return (
     <div className='contact-background'>
     <div className="contact-container">
+      <div className="contact-content">
       <img 
-              src="/images/log.png" 
-              alt="Romana Centro" 
+              src="/images/LOGO.png" 
+              alt="LOGO" 
               className="logo-image-contact"
             />
-      <div className="contact-content">
         <p>Contáctanos:</p>
         
         <div className="contact-info">
@@ -25,14 +25,14 @@ export default function Contact() {
           <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="contact-button whatsapp">
             Chatear por WhatsApp
           </a>
-          <a href={`mailto:${email}`} className="contact-button email">
+          {/* <a href={`mailto:${email}`} className="contact-button email">
             Enviar Correo
-          </a>
+          </a> */}
         </div>
       </div>
       <img 
-        src="/images/logoazul.png" 
-        alt="Romana Centro" 
+        src="/images/ISOTIPO.png" 
+        alt="Isotipo" 
         className="logo-image-contact isotipo"
       />
     </div>

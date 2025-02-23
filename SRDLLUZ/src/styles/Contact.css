@@ -1,26 +1,28 @@
 .logo-image-contact{
-    width: 200px;
-    margin: 0.5rem;
+    width: 400px;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 .isotipo{
-    width: 400px;
+    margin-top: 0.5rem;
+    width: 250px;
 }
 .contact-container {
     text-align: center;
-    color: var(--navy);
+    color: var(--off-white);
     padding: 50px 20px;
     font-family: 'Poppins', sans-serif;
 }
 .contact-background{
     background: linear-gradient(rgba(44, 62, 80, 0.679), rgba(44, 62, 80, 0.483)),
-     url('../../public/images/fondo.png') center/cover;
+     url('../../public/images/catedral.jpg') center/cover;
     height: 100vh;
 }
 
 .contact-content {
     max-width: 600px;
     margin: auto;
-    background-color: var(--off-white);
+    background-color: var(--flame);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
