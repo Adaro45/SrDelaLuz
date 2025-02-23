@@ -35,9 +35,6 @@ margin-bottom: 1rem;
   position: sticky;
   top: 0;
   background-color: var(--darkchocolate);
-  /* background-color: rgba(255, 255, 255, 0.160);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px); */
   padding: 1rem;
   padding-bottom: 0.5rem;
   z-index: 1000;
@@ -56,7 +53,7 @@ nav {
   margin: 0;
   margin-right: auto;
   text-decoration: none;
-  padding: 0;    
+  padding: 0;
 }
 .logo h1{
   font-size: 30px;
@@ -83,33 +80,40 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--gold);
+  color: var(--off-white);
 }
 
 .hero h1 {
   height: 50%;
 }
+
 .hero-image{
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  object-fit: cover; 
+  object-position: top; 
 }
 h1 {
   font-size: 4rem;
 }
 
 .btn-primary {
-  background: var(--gold);
-  color: var(--darkchocolate);
+  color: var(--gold);
+  background-color: var(--darkchocolate);
   padding: 0.8rem 2rem;
   border: none;
   cursor: pointer;
   font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 10rem;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 0;
+  gap: 1rem;
+  align-items: center;
 }
 .cta-buttons a{
   text-decoration: none;
@@ -117,17 +121,25 @@ h1 {
 
 .btn-primary,.btn-secondary {
   border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
-
+.btn-primary{
+width: fit-content;
+}
 .btn-secondary:hover,.btn-primary:hover {
   transform: scale(1.1);
   transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  border: 2px solid var(--darkchocolate);
+  color: var(--darkchocolate);
+  background-color: var(--off-white);
 }
 
 .btn-secondary {
   background: transparent;
   border: 2px solid var(--gold);
   color: var(--gold);
+  background-color: var(--darkchocolate);
   padding: 0.8rem 2rem;
   margin-left: 1rem;
   cursor: pointer;

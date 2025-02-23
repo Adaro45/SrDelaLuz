@@ -84,34 +84,32 @@ export default function HomePage() {
     <div className="home-container">
         
       <section className="hero">
+        <img src="/images/catedral.jpg" className="hero-image" alt="Fondo Catedral" />
         <div className="hero-overlay">
-        <img src="../../public/images/catedral.jpg" className="hero-image" alt="Fondo Catedral" />
-          <div className="hero-left">
-            <div className="site-description">
-              <img src="/images/ISOTIPO.png" alt="logo" className='logotipo' />
-              <h2>Bienvenido a Nuestro Sitio</h2>
-              <p>
-                Aquí encontrarás una amplia selección de artículos religiosos, seleccionados cuidadosamente para inspirar y enriquecer tu fe.
-              </p>
-            </div>
-          </div>
           <div className="hero-right">
             <div className="product-slider">
               <img src={sliderImages[currentSlide]} alt="Producto Religioso" className="slider-image" />
+            </div>
               <div className="slider-description">
                 <p>Descubre productos que elevan tu espíritu y embellecen tu entorno.</p>
               </div>
+          <div className="cta-buttons">
+            <Link to="/productos-terminados" className="btn-secondary">Ver Catálogo</Link>
+          </div>
+          </div>
+        </div>
+          <div className="hero-left">
+            <div className="site-description">
+              <h2>Bienvenido a Nuestro Sitio</h2>
+              <img src="/images/srdelasalud.jpg" alt="logo" className='logotipo' />
+          <div className="cta-buttons">
+              <p>
+                Aquí encontrarás una amplia gama de artículos religiosos , seleccionados cuidadosamente para inspirar y enriquecer tu fe.
+              </p>
+            <Link to="/contacto" className="btn-primary">Contáctanos Directamente</Link>
             </div>
           </div>
-        </div>
-        
-        <div className="hero-content">
-          <h2>"Tu aliado en el arte de enmarcar"</h2>
-          <div className="cta-buttons">
-            <Link to="/productos" className="btn-primary">Ver Catálogo</Link>
-            <Link to="/contacto" className="btn-secondary">Contactar Asesor</Link>
           </div>
-        </div>
       </section>
     </div>
   );

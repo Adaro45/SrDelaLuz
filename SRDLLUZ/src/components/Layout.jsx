@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <header className="sticky-header">
         <nav>
           <Link to="/" className="logo">
-            <img src="./images/isotiporecortado.png" alt="isotipo" className='isotipo-header' />
+            <img src="./images/ISOTIPO.png" alt="isotipo" className='isotipo-header' />
             <h1> SEÑOR DE LA SALUD</h1>
 
           </Link>

@@ -10,7 +10,9 @@
 }
 /* Estilo para el select personalizado */
 .custom-select-container {
-  position: relative;
+  position: sticky;
+  top: 1.5rem; /* Ajusta este valor según tus necesidades */
+  z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
   width: 200px;
   margin: 0 auto 2rem;
 }
@@ -19,7 +21,8 @@
   background: var(--off-white);
   border: 2px solid var(--gold);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  width: 200px;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
   font-weight: bold;
   text-align: center;
@@ -38,7 +41,7 @@
 }
 
 .custom-option {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
   transition: background 0.3s ease;
 }
