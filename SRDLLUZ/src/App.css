@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Baskerville";
+  src: url("../Font/baskerville-old-face.ttf");
+}
+*{
+  font-family: Baskerville;
+  font-size: 20px;
+}
+:root {
+  --darkchocolate: #312121;
+  --gold: #E8B553;
+  --flame: #cf5c36;
+  --black-details:#000501;
+  --off-white: #e2cea7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-image {
+  height: 3rem;
+  margin: 0;
+}
+
+
+h2{
+font-family: cursive;
+font-style: italic;
+margin-bottom: 1rem;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--darkchocolate);
+  /* background-color: rgba(255, 255, 255, 0.160);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  color: var(--darkchocolate);
+  margin: 0;
+  margin-right: auto;
+  text-decoration: none;
+  padding: 0;    
+}
+.logo h1{
+  font-size: 30px;
+  color: var(--gold);
+  margin-top: auto;
+  padding-bottom: 0;
+}
+.isotipo-header {
+  height: 4rem;
+  margin-right: 1rem;
+}
+.nav-links a {
+  color: var(--gold);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: larger;
+  transition: color 0.3s;
+}
+
+.nav-links {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 0.2rem;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.hero h1 {
+  height: 50%;
+}
+.hero-image{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--darkchocolate);
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 10rem;
+}
+.cta-buttons a{
+  text-decoration: none;
+}
+
+.btn-primary,.btn-secondary {
+  border-radius: 10px;
+}
+
+.btn-secondary:hover,.btn-primary:hover {
+  transform: scale(1.1);
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  padding: 0.8rem 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.features h2{
+  padding: 1rem;
+  text-align: center;
+  color: var(--darkchocolate);
+  font-size: 3rem;
+}
+.feature-card {
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+/* Mobile Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: var(--gold);
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--darkchocolate);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    margin: 0;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature-card:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    height: 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-card {
+    padding: 1rem;
+    min-height: 150px;
+  }
+}
+
+/* Animaciones mejoradas */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
