@@ -76,18 +76,27 @@
 .email:hover {
     background-color: #b89630;
 }
-
 @media (max-width: 768px) {
-    .logo-image-contact{
-        width: 200px;
+    .logo-image-contact {
+      width: 350px;
     }
-}
-
-@media (max-width: 480px) {
-    .logo-image-contact{
-        width: 100px;
+    .contact-content {
+      padding: 20px;
     }
-    .isotipo{
-        width: 300px;
+  }
+  
+  @media (max-width: 480px) {
+    .logo-image-contact {
+      width: 300px;
     }
-}
+    .isotipo {
+      width: 150px;
+    }
+    .contact-info p {
+      font-size: 20px;
+    }
+    .contact-button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }

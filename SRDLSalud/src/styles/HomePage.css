@@ -134,3 +134,55 @@
     text-align: center;
     color: var(--off-white);
   }
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+   .logotipo{
+      height: 400px;
+      width: 100%;
+    } 
+    .hero-overlay {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .hero-left, .hero-right {
+      width: 100%;
+      margin: 0.5rem 0;
+      background-color: #e2cea7d2;
+    }
+    
+    .site-description h2 {
+      font-size: 28px;
+    }
+    .cta-buttons p {
+      font-size: 25px !important;;
+    }
+    .site-description h2{
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-overlay {
+      padding: 0.5rem;
+    }
+    
+    .site-description h2 {
+      margin-top: 0;
+    }
+    
+    .site-description p,
+    .slider-description p {
+      font-size: 25px;
+      margin: 0;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .logotipo {
+      width: auto;
+    }
+  }

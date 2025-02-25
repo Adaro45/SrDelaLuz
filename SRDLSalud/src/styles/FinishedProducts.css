@@ -125,4 +125,27 @@ padding: 1rem;
     right: -35px;
     font-size: 0.7rem;
   }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-select-container {
+    width: 150px;
+    top: 6rem;
+  }
+  
+  .custom-select {
+    background-color: var(--darkchocolate);
+    color: var(--gold);
+    width: 150px;
+    font-size: 16px;
+  }
+  
+  .products-grid {
+    padding: 0 1rem;
+  }
 }

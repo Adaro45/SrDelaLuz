@@ -54,3 +54,32 @@
     text-decoration: none;
     color: var(--gold);
 }
+@media (max-width: 768px) {
+    .FooterContainer {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .contant-details {
+      margin: 0;
+    }
+    
+    .FooterContent {
+      margin: 1rem 0;
+    }
+    
+    .logo-footer {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-footer-container{
+    display: none;
+    }
+    .FooterContent p {
+      font-size: 14px;
+    }
+  }
