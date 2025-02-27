@@ -102,16 +102,13 @@ h1 {
   padding: 0.8rem 2rem;
   border: none;
   cursor: pointer;
-  font-weight: bold;
   margin-top: auto;
-  margin-bottom: 0;
 }
 
 .cta-buttons {
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  margin-bottom: 0;
   gap: 1rem;
   align-items: center;
 }
@@ -122,11 +119,14 @@ h1 {
 .btn-primary,.btn-secondary {
   border-radius: 10px;
   font-size: 20px;
+  margin-top: auto;
+  margin-bottom: 1rem;
   font-family: 'Courier New', Courier, monospace;
 }
 .btn-primary{
 width: fit-content;
 }
+
 .btn-secondary:hover,.btn-primary:hover {
   transform: scale(1.1);
   transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);

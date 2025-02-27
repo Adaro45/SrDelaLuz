@@ -6,9 +6,10 @@ export default function Footer() {
     <div className='FooterContainer'>
         <div className="contant-details">
             <h3>Información de contacto</h3>
-            <p>Av. 10 de Agosto N24-10 y Av. Colón</p>
+            <p>Emilio Carranza #38 col. Centro. CP.58500</p>
+            <span>Frente al Santuario del Señor de la Salud  </span>
             <p>Michoacán - México </p>
-            <span>WhatsApp: +52438176443</span>
+            <span>WhatsApp: <b>+52438176443</b></span>
         </div>
         <div className='logo-footer-container'>
         <img src="./images/LOGO.png" alt="logo" className='logo-footer'/>

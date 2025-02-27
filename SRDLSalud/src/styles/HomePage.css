@@ -40,6 +40,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    padding-top: 0;
     box-sizing: border-box;
     z-index: 1;
   }
@@ -55,27 +56,26 @@
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 95%;
     background-color: var(--off-white);
     padding: 1rem;
     border-radius: 8px;
     color: var(--black-details);
-    margin-bottom: 4rem;
     align-items: center;
     z-index: 2;
   }
   
   .site-description h2 {
-    margin-top: 2rem;
-    font-size: 35px;
+    margin-top: 1rem;
+    font-size: 30px;
     margin-bottom: 1rem;
-    -webkit-text-stroke: 0.5px var(--black-details);
+    color: var(--black-details);
   }
   
   .site-description p {
-    font-size: 25px;
+    color: var(--black-details);
+    font-size: 26px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 1.2;
   }
   
@@ -90,9 +90,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     justify-content: center;
-    margin: 0.5rem;
-    margin-bottom: 3rem;
+    margin-top: 0;
+    z-index: 200;
   }
   
   .product-slider {
@@ -103,9 +104,10 @@
     width: 100%;
     max-height: 500px;
     filter: brightness(0.9) contrast(1.1);
-    object-fit: contain;
+    object-fit: scale-down;
     border-radius: 4px;
-    margin-bottom: auto;
+    margin-bottom: 0;
+    margin-top: auto;
   }
   
   .slider-description p {
@@ -126,13 +128,22 @@
   }
   /* Contenido principal inferior */
   .hero-content {
+    color: var(--black-details);
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     text-align: center;
-    color: var(--off-white);
+  }
+  .slogan {
+    font-size: 22px !important;
+    margin: 0!important;
+    font-style: normal !important;
+    letter-spacing: 2px;
+    color: var(--black-details);
+
+    font-family: Baskerville;
   }
   @media (max-width: 768px) {
     .hero {
